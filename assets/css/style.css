@@ -14,14 +14,14 @@ main {
 }
 
 .sidebar {
-  width: 280px;
+  width: 300px;
   background: #1e293b;
   padding: 20px;
   border-radius: 15px;
 }
 
 .avatar {
-  width: 120px;
+  width: 130px;
   border-radius: 50%;
   margin-bottom: 10px;
 }
@@ -32,11 +32,18 @@ main {
 
 .sidebar-info_more {
   display: none;
-  margin-top: 10px;
+  margin-top: 15px;
 }
 
 .sidebar.active .sidebar-info_more {
   display: block;
+}
+
+.resume-links a {
+  display: block;
+  margin-top: 10px;
+  color: #facc15;
+  text-decoration: none;
 }
 
 .content {
@@ -57,6 +64,7 @@ main {
   border: none;
   color: #cbd5f5;
   cursor: pointer;
+  font-size: 14px;
 }
 
 .navbar button.active {
@@ -69,6 +77,14 @@ main {
 
 .page.active {
   display: block;
+}
+
+h2 {
+  margin-bottom: 10px;
+}
+
+h3 {
+  margin-top: 20px;
 }
 
 input, textarea {
