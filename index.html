@@ -9,122 +9,87 @@
 
 <body>
 
+<header>
+  <img src="./assets/images/photo.jpg" alt="Surendar">
+  <h1>Surendar</h1>
+  <p>Digital Marketing Executive</p>
+
+  <div class="resume-links">
+    <a href="./assets/resume/resume.pdf" target="_blank">View Resume</a>
+    <a href="./assets/resume/resume.pdf" download>Download Resume</a>
+  </div>
+</header>
+
 <main>
 
-  <!-- SIDEBAR -->
-  <aside class="sidebar" data-sidebar>
+<section>
+  <h2>About Me</h2>
+  <p>
+    Digital Marketing professional with experience in SEO, content writing,
+    social media management, Canva design, and analytics.
+    Focused on improving visibility and engagement through data-driven strategies.
+  </p>
+</section>
 
-    <div class="sidebar-info">
-      <img src="./assets/images/photo.jpg" alt="Surendar" class="avatar">
-      <h1>Surendar</h1>
-      <p class="role">Digital Marketing Executive</p>
+<section>
+  <h2>Certifications</h2>
+  <ul>
+    <li>Google Digital Marketing Fundamentals</li>
+    <li>SEO Fundamentals Certification</li>
+    <li>Content Marketing Certification</li>
+  </ul>
+</section>
 
-      <button data-sidebar-btn>Show Contacts</button>
-    </div>
+<section>
+  <h2>Content Writing</h2>
+  <p>
+    Created SEO-optimized blogs, website content, and marketing copies
+    focused on organic reach and audience engagement.
+  </p>
+</section>
 
-    <div class="sidebar-info_more">
-      <p>Email: surendar@email.com</p>
-      <p>Phone: +91 XXXXXXXXXX</p>
-      <p>Location: India</p>
+<section>
+  <h2>SEO Projects</h2>
+  <ul class="project-list">
+    <li data-project="seo">SEO Audit – Business Website</li>
+    <li data-project="content">Content Optimization Project</li>
+  </ul>
+</section>
 
-      <div class="resume-links">
-        <a href="./assets/resume/resume.pdf" target="_blank">View Resume</a>
-        <a href="./assets/resume/resume.pdf" download>Download Resume</a>
-      </div>
-    </div>
+<section>
+  <h2>Social Media</h2>
+  <ul class="project-list">
+    <li data-project="social">Instagram Growth Campaign</li>
+  </ul>
+</section>
 
-  </aside>
+<section>
+  <h2>Canva Designs</h2>
+  <p>
+    Designed social media creatives, promotional banners,
+    and branding visuals using Canva.
+  </p>
+</section>
 
-  <!-- MAIN CONTENT -->
-  <section class="content">
-
-    <nav class="navbar">
-      <button data-nav-link class="active">About</button>
-      <button data-nav-link>Resume</button>
-      <button data-nav-link>Portfolio</button>
-      <button data-nav-link>Contact</button>
-    </nav>
-
-    <!-- ABOUT -->
-    <article class="page active" data-page="about">
-      <h2>About Me</h2>
-      <p>
-        Digital Marketing professional with practical experience in SEO,
-        content writing, social media marketing, and analytics.
-        I focus on increasing online visibility and engagement through
-        data-driven marketing strategies.
-      </p>
-
-      <h3>Certifications</h3>
-      <ul>
-        <li>Google Digital Marketing Fundamentals</li>
-        <li>SEO Fundamentals Certification</li>
-        <li>Content Marketing Certification</li>
-      </ul>
-    </article>
-
-    <!-- RESUME -->
-    <article class="page" data-page="resume">
-      <h2>Professional Skills</h2>
-
-      <h3>Content Writing</h3>
-      <p>
-        Created SEO-optimized blog articles, website content,
-        and marketing copies focused on audience engagement.
-      </p>
-
-      <h3>SEO Projects</h3>
-      <p>
-        Worked on keyword research, on-page SEO, content optimization,
-        and basic technical SEO improvements.
-      </p>
-
-      <h3>Social Media</h3>
-      <p>
-        Managed social media pages, planned content calendars,
-        and improved engagement metrics.
-      </p>
-
-      <h3>Canva Designs</h3>
-      <p>
-        Designed creatives for social media posts, promotions,
-        and branding using Canva.
-      </p>
-
-      <h3>Analytics</h3>
-      <p>
-        Used Google Analytics to track traffic, user behavior,
-        and campaign performance.
-      </p>
-    </article>
-
-    <!-- PORTFOLIO -->
-    <article class="page" data-page="portfolio">
-      <h2>Projects Overview</h2>
-
-      <ul>
-        <li><strong>SEO Audit:</strong> Improved organic traffic by 35%</li>
-        <li><strong>Content Strategy:</strong> Blog and website content planning</li>
-        <li><strong>Social Media Campaign:</strong> Increased engagement by 28%</li>
-        <li><strong>Analytics Report:</strong> Website performance analysis</li>
-      </ul>
-    </article>
-
-    <!-- CONTACT -->
-    <article class="page" data-page="contact">
-      <h2>Contact</h2>
-
-      <form action="mailto:surendar@email.com" method="post">
-        <input type="text" placeholder="Your Name" required>
-        <input type="email" placeholder="Your Email" required>
-        <textarea placeholder="Message" required></textarea>
-        <button type="submit">Send Message</button>
-      </form>
-    </article>
-
-  </section>
+<section>
+  <h2>Analytics</h2>
+  <p>
+    Used Google Analytics to track website traffic, user behavior,
+    and campaign performance.
+  </p>
+</section>
 
 </main>
+
+<!-- PROJECT MODAL -->
+<div class="modal" id="projectModal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <h3 id="modalTitle"></h3>
+    <img id="modalImage" src="" alt="">
+    <p id="modalText"></p>
+  </div>
+</div>
 
 <script src="./assets/js/script.js"></script>
 </body>
