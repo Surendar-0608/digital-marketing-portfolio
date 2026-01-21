@@ -5,97 +5,80 @@ body {
   color: #e5e7eb;
 }
 
-main {
-  display: flex;
-  max-width: 1100px;
-  margin: auto;
-  padding: 20px;
-  gap: 20px;
-}
-
-.sidebar {
-  width: 300px;
+header {
+  text-align: center;
+  padding: 30px;
   background: #1e293b;
-  padding: 20px;
-  border-radius: 15px;
 }
 
-.avatar {
-  width: 130px;
+header img {
+  width: 140px;
   border-radius: 50%;
-  margin-bottom: 10px;
 }
 
-.role {
+header p {
   color: #94a3b8;
 }
 
-.sidebar-info_more {
-  display: none;
-  margin-top: 15px;
-}
-
-.sidebar.active .sidebar-info_more {
-  display: block;
-}
-
 .resume-links a {
-  display: block;
-  margin-top: 10px;
+  margin: 10px;
   color: #facc15;
   text-decoration: none;
 }
 
-.content {
-  flex: 1;
-  background: #1e293b;
-  padding: 25px;
-  border-radius: 15px;
+main {
+  max-width: 900px;
+  margin: auto;
+  padding: 20px;
 }
 
-.navbar {
-  display: flex;
-  gap: 15px;
-  margin-bottom: 20px;
-}
-
-.navbar button {
-  background: none;
-  border: none;
-  color: #cbd5f5;
-  cursor: pointer;
-  font-size: 14px;
-}
-
-.navbar button.active {
-  color: #facc15;
-}
-
-.page {
-  display: none;
-}
-
-.page.active {
-  display: block;
+section {
+  margin-bottom: 40px;
 }
 
 h2 {
-  margin-bottom: 10px;
+  border-bottom: 2px solid #facc15;
+  padding-bottom: 5px;
 }
 
-h3 {
-  margin-top: 20px;
+.project-list li {
+  cursor: pointer;
+  color: #facc15;
+  margin: 8px 0;
 }
 
-input, textarea {
+.project-list li:hover {
+  text-decoration: underline;
+}
+
+/* MODAL */
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
   width: 100%;
-  margin-bottom: 10px;
-  padding: 10px;
+  height: 100%;
+  background: rgba(0,0,0,0.8);
 }
 
-button {
-  padding: 10px;
-  background: #facc15;
-  border: none;
+.modal-content {
+  background: #1e293b;
+  max-width: 600px;
+  margin: 10% auto;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.modal-content img {
+  width: 100%;
+  border-radius: 8px;
+  margin: 15px 0;
+}
+
+.close {
+  float: right;
+  font-size: 22px;
   cursor: pointer;
 }
