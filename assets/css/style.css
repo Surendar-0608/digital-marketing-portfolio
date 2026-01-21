@@ -1,0 +1,85 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #0f172a;
+  color: #e5e7eb;
+}
+
+main {
+  display: flex;
+  max-width: 1100px;
+  margin: auto;
+  padding: 20px;
+  gap: 20px;
+}
+
+.sidebar {
+  width: 280px;
+  background: #1e293b;
+  padding: 20px;
+  border-radius: 15px;
+}
+
+.avatar {
+  width: 120px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.role {
+  color: #94a3b8;
+}
+
+.sidebar-info_more {
+  display: none;
+  margin-top: 10px;
+}
+
+.sidebar.active .sidebar-info_more {
+  display: block;
+}
+
+.content {
+  flex: 1;
+  background: #1e293b;
+  padding: 25px;
+  border-radius: 15px;
+}
+
+.navbar {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.navbar button {
+  background: none;
+  border: none;
+  color: #cbd5f5;
+  cursor: pointer;
+}
+
+.navbar button.active {
+  color: #facc15;
+}
+
+.page {
+  display: none;
+}
+
+.page.active {
+  display: block;
+}
+
+input, textarea {
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 10px;
+}
+
+button {
+  padding: 10px;
+  background: #facc15;
+  border: none;
+  cursor: pointer;
+}
