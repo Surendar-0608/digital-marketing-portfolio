@@ -1,2 +1,3 @@
-// Simple console message to show JS usage
-console.log("Digital Marketing Portfolio Loaded Successfully");
+function toggleTheme() {
+  document.body.classList.toggle("dark");
+}
