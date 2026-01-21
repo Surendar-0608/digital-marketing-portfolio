@@ -2,116 +2,109 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Digital Marketing Portfolio</title>
+  <title>Surendar | Digital Marketing Resume</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<header>
-  <h1>Surendar</h1>
-  <p>Digital Marketing Executive</p>
-</header>
+<div class="container">
 
-<nav>
-  <a href="#about">About</a>
-  <a href="#certifications">Certifications</a>
-  <a href="#content">Content Writing</a>
-  <a href="#seo">SEO Projects</a>
-  <a href="#social">Social Media</a>
-  <a href="#canva">Canva Designs</a>
-  <a href="#analytics">Analytics</a>
-  <a href="#resume">Resume</a>
-</nav>
+  <!-- LEFT PANEL -->
+  <aside class="left">
+    <img src="assets/profile.jpg" alt="Profile">
+    <h1>Surendar</h1>
+    <p class="role">Digital Marketing Executive</p>
 
-<section class="profile">
-  <img src="assets/profile.jpg" alt="Profile Picture">
-</section>
+    <h3>Skills</h3>
+    <div class="skill">
+      <span>SEO</span>
+      <div class="bar"><div style="width:80%"></div></div>
+    </div>
+    <div class="skill">
+      <span>Content Writing</span>
+      <div class="bar"><div style="width:85%"></div></div>
+    </div>
+    <div class="skill">
+      <span>Social Media</span>
+      <div class="bar"><div style="width:75%"></div></div>
+    </div>
+    <div class="skill">
+      <span>Analytics</span>
+      <div class="bar"><div style="width:70%"></div></div>
+    </div>
 
-<section id="about">
-  <h2>About Me</h2>
-  <p>
-    I am a passionate digital marketing professional with hands-on experience in 
-    SEO, content writing, social media marketing, and analytics. 
-    I enjoy creating data-driven strategies to improve brand visibility and engagement.
-  </p>
-</section>
+    <a class="btn" href="assets/resume.pdf" download>Download Resume</a>
+    <button class="toggle" onclick="toggleTheme()">Dark / Light</button>
+  </aside>
 
-<section id="certifications">
-  <h2>Certifications</h2>
-  <ul>
-    <li>Google Digital Marketing Fundamentals</li>
-    <li>SEO Basics Certification</li>
-    <li>Content Marketing Certification</li>
-  </ul>
-</section>
+  <!-- RIGHT PANEL -->
+  <main class="right">
 
-<section id="content">
-  <h2>Content Writing</h2>
-  <p>
-    Created blog posts, website content, and marketing copies focused on 
-    audience engagement and SEO optimization.
-  </p>
-  <ul>
-    <li>Blog articles (1000+ words)</li>
-    <li>Website landing page content</li>
-    <li>Product descriptions</li>
-  </ul>
-</section>
+    <section>
+      <h2>About Me</h2>
+      <p>
+        Digital marketing professional with hands-on experience in SEO,
+        content creation, social media marketing, and analytics.
+        Passionate about improving brand visibility using data-driven strategies.
+      </p>
+    </section>
 
-<section id="seo">
-  <h2>SEO Projects</h2>
-  <ul>
-    <li>Keyword research using Google Keyword Planner</li>
-    <li>On-page SEO optimization</li>
-    <li>Meta tags and content optimization</li>
-    <li>Basic backlink analysis</li>
-  </ul>
-</section>
+    <section>
+      <h2>Certifications</h2>
+      <ul>
+        <li>Google Digital Marketing Fundamentals</li>
+        <li>SEO Fundamentals Certification</li>
+        <li>Content Marketing Certification</li>
+      </ul>
+    </section>
 
-<section id="social">
-  <h2>Social Media Marketing</h2>
-  <p>
-    Managed social media pages and created engaging content to increase reach and followers.
-  </p>
-  <ul>
-    <li>Instagram & Facebook page handling</li>
-    <li>Content calendar planning</li>
-    <li>Engagement analysis</li>
-  </ul>
-</section>
+    <section>
+      <h2>Content Writing</h2>
+      <ul>
+        <li>SEO-friendly blog writing</li>
+        <li>Website content creation</li>
+        <li>Marketing copywriting</li>
+      </ul>
+    </section>
 
-<section id="canva">
-  <h2>Canva Designs</h2>
-  <p>
-    Designed creatives for social media, promotions, and branding using Canva.
-  </p>
-  <ul>
-    <li>Social media posters</li>
-    <li>Ad banners</li>
-    <li>Brand creatives</li>
-  </ul>
-</section>
+    <section>
+      <h2>SEO Projects</h2>
+      <ul>
+        <li>Keyword research and mapping</li>
+        <li>On-page SEO optimization</li>
+        <li>Meta tags and content optimization</li>
+      </ul>
+    </section>
 
-<section id="analytics">
-  <h2>Analytics</h2>
-  <p>
-    Worked with Google Analytics to track website traffic, user behavior, and campaign performance.
-  </p>
-  <ul>
-    <li>Traffic monitoring</li>
-    <li>User behavior analysis</li>
-    <li>Basic reporting</li>
-  </ul>
-</section>
+    <section>
+      <h2>Social Media</h2>
+      <ul>
+        <li>Instagram & Facebook page handling</li>
+        <li>Content calendar planning</li>
+        <li>Engagement growth tracking</li>
+      </ul>
+    </section>
 
-<section id="resume">
-  <h2>Resume</h2>
-  <a class="btn" href="assets/resume.pdf" download>Download Resume</a>
-</section>
+    <section>
+      <h2>Canva Designs</h2>
+      <ul>
+        <li>Social media creatives</li>
+        <li>Promotional posters</li>
+        <li>Brand design templates</li>
+      </ul>
+    </section>
 
-<footer>
-  <p>© 2026 Surendar | Digital Marketing Portfolio</p>
-</footer>
+    <section>
+      <h2>Analytics</h2>
+      <ul>
+        <li>Google Analytics basics</li>
+        <li>Traffic and user behavior analysis</li>
+        <li>Performance reporting</li>
+      </ul>
+    </section>
+
+  </main>
+</div>
 
 <script src="script.js"></script>
 </body>
