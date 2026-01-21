@@ -2,110 +2,112 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Surendar | Digital Marketing Resume</title>
-  <link rel="stylesheet" href="style.css">
+  <title>Surendar | Digital Marketing Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./assets/css/style.css">
 </head>
+
 <body>
 
-<div class="container">
+<main>
 
-  <!-- LEFT PANEL -->
-  <aside class="left">
-    <img src="assets/profile.jpg" alt="Profile">
-    <h1>Surendar</h1>
-    <p class="role">Digital Marketing Executive</p>
+  <!-- SIDEBAR -->
+  <aside class="sidebar" data-sidebar>
 
-    <h3>Skills</h3>
-    <div class="skill">
-      <span>SEO</span>
-      <div class="bar"><div style="width:80%"></div></div>
-    </div>
-    <div class="skill">
-      <span>Content Writing</span>
-      <div class="bar"><div style="width:85%"></div></div>
-    </div>
-    <div class="skill">
-      <span>Social Media</span>
-      <div class="bar"><div style="width:75%"></div></div>
-    </div>
-    <div class="skill">
-      <span>Analytics</span>
-      <div class="bar"><div style="width:70%"></div></div>
+    <div class="sidebar-info">
+      <img src="./assets/images/avatar.png" alt="Surendar" class="avatar">
+      <h1>Surendar</h1>
+      <p class="role">Digital Marketing Executive</p>
+
+      <button data-sidebar-btn>Show Contacts</button>
     </div>
 
-    <a class="btn" href="assets/resume.pdf" download>Download Resume</a>
-    <button class="toggle" onclick="toggleTheme()">Dark / Light</button>
+    <div class="sidebar-info_more">
+      <p>Email: surendar@email.com</p>
+      <p>Phone: +91 XXXXXXXXXX</p>
+      <p>Location: India</p>
+    </div>
+
   </aside>
 
-  <!-- RIGHT PANEL -->
-  <main class="right">
+  <!-- MAIN CONTENT -->
+  <section class="content">
 
-    <section>
+    <nav class="navbar">
+      <button data-nav-link class="active">About</button>
+      <button data-nav-link>Resume</button>
+      <button data-nav-link>Portfolio</button>
+      <button data-nav-link>Contact</button>
+    </nav>
+
+    <!-- ABOUT -->
+    <article class="page active" data-page="about">
       <h2>About Me</h2>
       <p>
-        Digital marketing professional with hands-on experience in SEO,
-        content creation, social media marketing, and analytics.
-        Passionate about improving brand visibility using data-driven strategies.
+        Digital Marketing professional with hands-on experience in SEO,
+        content marketing, social media management, and analytics.
+        I focus on improving online visibility and driving organic growth
+        through data-driven strategies.
       </p>
-    </section>
 
-    <section>
-      <h2>Certifications</h2>
+      <h3>What I Do</h3>
       <ul>
-        <li>Google Digital Marketing Fundamentals</li>
-        <li>SEO Fundamentals Certification</li>
-        <li>Content Marketing Certification</li>
+        <li>SEO Optimization & Keyword Research</li>
+        <li>Content Writing & Blogging</li>
+        <li>Social Media Marketing</li>
+        <li>Analytics & Performance Tracking</li>
       </ul>
-    </section>
+    </article>
 
-    <section>
-      <h2>Content Writing</h2>
+    <!-- RESUME -->
+    <article class="page" data-page="resume">
+      <h2>Resume</h2>
+
+      <h3>Experience</h3>
+      <p><strong>Digital Marketing Executive</strong> (2024 – Present)</p>
+      <p>
+        Worked on SEO optimization, content planning, social media campaigns,
+        and analytics reporting.
+      </p>
+
+      <h3>Skills</h3>
       <ul>
-        <li>SEO-friendly blog writing</li>
-        <li>Website content creation</li>
-        <li>Marketing copywriting</li>
+        <li>SEO – 80%</li>
+        <li>Content Writing – 85%</li>
+        <li>Social Media – 75%</li>
+        <li>Google Analytics – 70%</li>
+        <li>Canva Design – 65%</li>
       </ul>
-    </section>
+    </article>
 
-    <section>
-      <h2>SEO Projects</h2>
+    <!-- PORTFOLIO -->
+    <article class="page" data-page="portfolio">
+      <h2>Projects</h2>
+
       <ul>
-        <li>Keyword research and mapping</li>
-        <li>On-page SEO optimization</li>
-        <li>Meta tags and content optimization</li>
+        <li><strong>SEO Audit</strong> – Improved organic traffic by 35%</li>
+        <li><strong>Content Strategy</strong> – Blog & website content planning</li>
+        <li><strong>Social Media Campaign</strong> – Increased engagement by 28%</li>
+        <li><strong>Analytics Report</strong> – Traffic & user behavior analysis</li>
       </ul>
-    </section>
+    </article>
 
-    <section>
-      <h2>Social Media</h2>
-      <ul>
-        <li>Instagram & Facebook page handling</li>
-        <li>Content calendar planning</li>
-        <li>Engagement growth tracking</li>
-      </ul>
-    </section>
+    <!-- CONTACT -->
+    <article class="page" data-page="contact">
+      <h2>Contact</h2>
 
-    <section>
-      <h2>Canva Designs</h2>
-      <ul>
-        <li>Social media creatives</li>
-        <li>Promotional posters</li>
-        <li>Brand design templates</li>
-      </ul>
-    </section>
+      <form action="mailto:surendar@email.com" method="post">
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Your Email" required>
+        <textarea placeholder="Message" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </article>
 
-    <section>
-      <h2>Analytics</h2>
-      <ul>
-        <li>Google Analytics basics</li>
-        <li>Traffic and user behavior analysis</li>
-        <li>Performance reporting</li>
-      </ul>
-    </section>
+  </section>
 
-  </main>
-</div>
+</main>
 
-<script src="script.js"></script>
+<script src="./assets/js/script.js"></script>
 </body>
 </html>
